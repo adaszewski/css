@@ -1,0 +1,83 @@
+.flex-container {
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.flex-item {
+    width: 20%;
+    height: 300px;
+}
+
+#naglowek {
+    width: 100%;
+    height: 40px;
+    background-color: red;
+    line-height: 40px;
+}
+
+#lewy {
+    background-color: green;
+    order: 0;
+}
+
+#tresc {
+    width: 60%;
+    background-color: blue;
+    order: 1,
+}
+
+#prawy {
+    background-color: pink;
+    order: 2;
+}
+
+#stopka {
+    width: 100%;
+    height: 40px;
+    background-color: purple;
+    line-height: 40px;
+    order: 5;
+}
+
+@media all and (min-width:768px) and (max-width:992px) {
+    #lewy {
+        width: 100%;
+        order: 3;
+    }
+
+    #tresc {
+        width: 80%;
+        order: 1;
+    }
+}
+
+@media all and (max-width:768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .flex-item {
+        width: 100%;
+        height: 300px;
+    }
+
+    #lewy {
+        order: 3;
+    }
+
+    #prawy {
+        order: 2;
+    }
+
+    #tresc {
+        width: 100%;
+        order: 1;
+    }
+}
