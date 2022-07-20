@@ -69,11 +69,11 @@
     }
 
     #lewy {
-        order: 3;
+        order: 2;
     }
 
     #prawy {
-        order: 2;
+        order: 3;
     }
 
     #tresc {
